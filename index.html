@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Cho of The Day</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="favicon-32x32.png">
+    <script
+      src="https://kit.fontawesome.com/4e38c87c6a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="head1">
+      <header>
+        <h1
+          style="
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+              'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          "
+        >
+          <i
+            style="color: rgba(255, 0, 0, 0.747)"
+            class="fa-solid fa-utensils"
+          ></i
+          >CHO OF THE DAY
+        </h1>
+        <div id="navlist">
+          <ul>
+            <li>
+              <a href="signup.html"
+                >Sign in&nbsp;<i class="fa-regular fa-user"></i
+              ></a>
+            </li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li>
+              <a href="signin.html"
+                >Sign up&nbsp;<i class="fa-solid fa-user-plus"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div id="dropdown">
+          <i class="fa-solid fa-user"></i>
+          <i onclick="displayPop();" class="fa-solid fa-angle-down"></i>
+          <div id="listdown">
+            <ul>
+              <li><a href="signup.html">Sign in</a></li>
+              <li><a href="signin.html">Sign up</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="fa">
+          <i onclick="displayWarning();" class="fa-solid fa-cart-shopping"></i>
+
+          <div id="num" style="position: absolute; top: 20%; left: 86%"></div>
+          <div id="message">
+            <i class="fa-solid fa-circle-check"></i> &nbsp;Added an item to cart
+            successfully
+          </div>
+        </div>
+      </header>
+
+      <div class="box">
+        <input
+          type="search"
+          class="searchbar"
+          style="width: 60vw; height: 2rem; border-radius: 5px"
+          placeholder="What do you want to eat?"
+        />
+        <button>Search</button>
+      </div>
+    </div>
+
+    <br />
+    <main>
+      <div class="mainsection1">
+                <div class="section1">
+          <a href="food1.html"><img src="bank.jpg" alt="" /></a>
+          <div class="section1-about">
+            <h1>Banku and Tilapia</h1>
+            <h3>GH&#8373;60</h3>
+            <div class="aboutinfo1">
+              &nbsp;
+              <button onclick="increaseData();">
+                <i style="color:red" class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        
+
+        </div>
+        
+          <div class="section1"><a href="food2.html">            <img src="jollof.png" alt="" /></a>
+            <div class="section1-about">
+              <h1>Jollof rice</h1>
+              <h3>GH&#8373;30</h3>
+              <div class="aboutinfo2">
+                &nbsp;
+                <button onclick="increaseData();">
+                  <i style="color:red"class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+          </div>
+        
+        
+          <div class="section1">
+            <a href="food3.html">    <img src="fry.jpg" alt="" /></a>
+            <div class="section1-about">
+              <h1>Assorted Fried Rice</h1>
+              <h3>GH&#8373;30</h3>
+              <div class="aboutinfo3">
+                &nbsp;
+                <button onclick="increaseData();">
+                  <i  style="color:red;"class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+      <div class="mainsection1">
+        
+        <div class="section1">
+          <a href="food4.html">  <img src="bank.jpg" alt="" /></a>
+          <div class="section1-about">
+            <h1>Banku and Tilapia</h1>
+            <h3>GH&#8373;60</h3>
+            <div class="aboutinfo4">
+              &nbsp;
+              <button onclick="increaseData();">
+                <i style="color:red"class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        
+        </div>
+        
+        <div class="section1">
+          <a href="food5.html">  <img src="yamo.jpg" alt="" /></a>
+          <div class="section1-about">
+            <h1>Fried Yam with chicken</h1>
+            <h3>GH&#8373;30</h3>
+            <div class="aboutinfo5">
+              &nbsp;
+              <button onclick="increaseData();">
+                <i style="color:red;" class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        
+        </div>
+      
+      
+        <div class="section1">
+          <a href="food6.html" >    <img src="fufu.jpeg" alt="" /></a>
+          <div class="section1-about">
+            <h1>Fufu with soup</h1>
+            <h3>GH&#8373;40</h3>
+            <div class="aboutinfo6">
+              &nbsp;
+              <button onclick="increaseData();">
+                <i style="color: red;" class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

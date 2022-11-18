@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  border: 1px red solid;
+  width: 30%;
+  height: 35vw;
+  /* padding: 10px; */
+  margin: auto;
+  text-align: center;
+  margin-top: 5%;
+}
+header {
+  border: 1px red solid;
+  font-size: 30px;
+  text-align: justify;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 5px;
+  background-color: red;
+  /* white-space: inherit; */
+  color: white;
+}
+button {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px red solid;
+  background-color: red;
+  color: white;
+}
+input {
+  width: 50%;
+  height: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px red solid;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+
+input[type="password"]:focus {
+  outline: none;
+}
+@media screen and (max-width: 700px) {
+  body {
+    width: 90vw;
+    height: 60vh;
+  }
+}

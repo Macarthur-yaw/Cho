@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  border: 1px rgba(255, 0, 0, 0.699) solid;
+
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+}
+header,
+main {
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 0.699);
+}
+main img {
+  border-radius: 10px;
+  width: 70%;
+}
+main button {
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  background-color: white;
+  border: 1px rgba(255, 0, 0, 0.699) solid;
+  cursor: pointer;
+}
+main button:hover {
+  border: 2px rgba(255, 0, 0, 0.699) solid;
+}
+main {
+  background-color: white;
+  font-size: 25px;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header .fa-solid {
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#message {
+  position: absolute;
+  background-color: white;
+  padding: 4px;
+  color: red;
+  left: 55%;
+  top: 0;
+
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 700px) {
+  main button {
+    display: flex;
+    font-size: 20px;
+  }
+  main img {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
+  #message {
+    right: 8%;
+  }
+}
